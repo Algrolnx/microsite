@@ -1,9 +1,8 @@
-# README BY AI
 # Microservices Architecture: Django, Redis, PostgreSQL, and Java Worker
 
 This project is a Proof of Concept (PoC) demonstrating an **Event-Driven Microservices Architecture**. It showcases how a fast web framework (Django) can offload heavy background tasks to a heterogeneous worker (Java) using a message broker (Redis) and a relational database (PostgreSQL) for state persistence.
 
-## 🏗️ Architecture Overview
+## Architecture Overview
 
 The system consists of three main components running in Docker containers:
 
@@ -19,7 +18,7 @@ The system consists of three main components running in Docker containers:
     *   Picks up tasks, simulates heavy processing (e.g., report generation).
     *   Connects directly to PostgreSQL via JDBC to update the task status to `SUCCESS`.
 
-## 🚀 How to Run Locally
+## How to Run Locally
 
 ### Prerequisites
 *   [Docker](https://www.docker.com/) and Docker Compose installed.
@@ -39,7 +38,7 @@ The system consists of three main components running in Docker containers:
    docker compose exec api python manage.py migrate
    ```
 
-## 🧪 Testing the Pipeline
+## Testing the Pipeline
 
 Send a POST request to the API to trigger a task:
 

@@ -26,6 +26,18 @@
             <artifactId>slf4j-simple</artifactId>
             <version>2.0.12</version>
         </dependency>
+        <!-- Драйвер PostgreSQL -->
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.7.2</version>
+        </dependency>
+        <!-- Бібліотека для роботи з JSON -->
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20240303</version>
+        </dependency>
     </dependencies>
 
     <build>
